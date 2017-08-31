@@ -1,0 +1,66 @@
+@font-face {
+font-family: 'MonteCarlo';
+src: url("./MonteCarlo.ttf")
+}
+
+body {
+	background:#0d0b17;
+	font-family: MonteCarlo;
+	color: #a7a7ad;
+    font-size:17px;	
+}
+#container {
+	margin-top: 30%;
+	margin-left:auto;
+	margin-right:auto;
+	padding: 4px 16px;
+	width: 800px;
+	background:#0f0d1b;
+}
+
+#bf {
+	position:fixed;
+	bottom:0;
+	right:0;
+	padding-right:10px;
+	padding-bottom:10px;
+}
+
+#np {
+	background:#0f0d1b;
+	padding:10px;
+	border-radius:10px;
+	height:20px;
+}
+#navLinks a:link, a:visited {
+	color:#536494;
+	text-decoration:none;
+	font-weight:normal;
+}
+
+#navLinks a:hover {
+	color:#145da1;
+	text-decoration:underline;
+	font-weight:normal;
+}
+
+#clock, #date {
+	display:inline-block;
+	color:#20a7c5;
+	font-family:MonteCarlo;
+}
+
+input[type="submit"] {display: none;}
+input {
+	background-color:#0f0d1b;
+	color:#a7a7ad;
+	border: none;
+	font-family: MonteCarlo;
+	font-size:17px;
+	padding:0;
+}
+#search {
+	float:left;
+	margin: 0 0 0 6px;
+	padding: 0;
+}
