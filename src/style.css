@@ -1,23 +1,59 @@
+/*
+          .▄▄ · ▄▄▄▄▄ ▄▄▄· ▄▄▄  ▄▄▄▄▄ ▄▄▄· ▄▄▄·  ▄▄ • ▄▄▄ .
+          ▐█ ▀. •██  ▐█ ▀█ ▀▄ █·•██  ▐█ ▄█▐█ ▀█ ▐█ ▀ ▪▀▄.▀·
+          ▄▀▀▀█▄ ▐█.▪▄█▀▀█ ▐▀▀▄  ▐█.▪ ██▀·▄█▀▀█ ▄█ ▀█▄▐▀▀▪▄
+          ▐█▄▪▐█ ▐█▌·▐█ ▪▐▌▐█•█▌ ▐█▌·▐█▪·•▐█ ▪▐▌▐█▄▪▐█▐█▄▄▌
+           ▀▀▀▀  ▀▀▀  ▀  ▀ .▀  ▀ ▀▀▀ .▀    ▀  ▀ ·▀▀▀▀  ▀▀▀ 
+                 	by vortex !NOiDx.cCl2
+*/
+
 @font-face {
 font-family: 'MonteCarlo';
 src: url("./MonteCarlo.ttf")
 }
 
-body {
-	background:#0d0b17;
-	font-family: MonteCarlo;
-	color: #a7a7ad;
-    font-size:17px;	
+/* VARIABLES */
+:root {
+	--body-bg:#0d0b17;
+	--body-bg-var:#0f0d1b;
+	--color-main:#a7a7ad;
+	--color-1:#21969d;
+	--color-2:#236f8b;
+	--color-3:#4b658c;
+	--font-family:'MonteCarlo';
+	--font-size:17px;
 }
+
+/* PAGE STYLE & COLORS */
+body {
+	background:var(--body-bg);
+	font-family:var(--font-family);
+	color:var(--color-main);
+	font-size:var(--font-size);	
+}
+
 #container {
 	margin-top: 30%;
 	margin-left:auto;
 	margin-right:auto;
 	padding: 4px 16px;
 	width: 800px;
-	background:#0f0d1b;
+	background:var(--body-bg-var);
 }
 
+#navLinks a:link, a:visited {
+	color:var(--color-1);
+	text-decoration:none;
+	font-weight:normal;
+}
+
+#navLinks a:hover {
+	color:var(--color-2);
+	text-decoration:underline;
+	font-weight:normal;
+}
+
+/* MISC */
 #bf {
 	position:fixed;
 	bottom:0;
@@ -27,36 +63,25 @@ body {
 }
 
 #np {
-	background:#0f0d1b;
+	background:var(--body-bg-var);
 	padding:10px;
 	border-radius:10px;
 	height:20px;
 }
-#navLinks a:link, a:visited {
-	color:#536494;
-	text-decoration:none;
-	font-weight:normal;
-}
-
-#navLinks a:hover {
-	color:#145da1;
-	text-decoration:underline;
-	font-weight:normal;
-}
 
 #clock, #date {
 	display:inline-block;
-	color:#20a7c5;
-	font-family:MonteCarlo;
+	color:var(--color-3);
+	font-family:var(--font-family);
 }
 
 input[type="submit"] {display: none;}
 input {
-	background-color:#0f0d1b;
-	color:#a7a7ad;
+	background-color:var(--body-bg-var);
+	color:var(--color-main);
 	border: none;
-	font-family: MonteCarlo;
-	font-size:17px;
+	font-family:var(--font-family);
+	font-size:var(--font-size);
 	padding:0;
 }
 #search {
